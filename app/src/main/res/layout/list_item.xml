@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/tiny"
+    android:id="@+id/list_item">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/tiny">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/biggest"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/statue_of_liberty"
+                android:id="@+id/image_view" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/lg"
+                android:background="@drawable/gradient"
+                android:layout_alignBottom="@id/image_view"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentLeft="true">
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/card_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/ratingBar"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:padding="@dimen/tiny"
+                tools:text="@string/mock_liberty_txt"
+                android:textColor="@color/white"
+                android:textSize="@dimen/card_title_text" />
+
+            <RatingBar
+                android:id="@+id/ratingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/md"
+                android:paddingBottom="@dimen/tiny"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_alignBottom="@+id/image_view"
+                android:rating="@dimen/rate" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/image_view"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:padding="@dimen/tiny"
+                android:id="@+id/rating_text"
+                tools:text="@string/mock_rating_txt"
+                android:textColor="@color/white"/>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

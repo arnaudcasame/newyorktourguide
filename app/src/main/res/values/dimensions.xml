@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <dimen name="biggest">200dp</dimen>
     <dimen name="big">160dp</dimen>
+    <dimen name="lg">50dp</dimen>
+    <dimen name="md">30dp</dimen>
     <dimen name="tiny">4dp</dimen>
+    <dimen name="card_title_text">20sp</dimen>
+
+    <dimen name="rate">4.6</dimen>
 </resources>

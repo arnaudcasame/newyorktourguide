@@ -1,6 +1,9 @@
 <resources>
     <string name="app_name">New York</string>
     <string name="guide">New York\'s Tour Guide</string>
+    <string name="mock_liberty_txt">Statue of Liberty</string>
+    <string name="mock_rating_txt">4.6</string>
+    <string name="mock_txt">mock</string>
     <string name="open">Open</string>
     <string name="close">Close</string>
     <string name="places">Places to visit</string>
