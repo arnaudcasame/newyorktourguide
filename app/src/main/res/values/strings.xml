@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">New York</string>
+    <string name="guide">New York\'s Tour Guide</string>
     <string name="open">Open</string>
     <string name="close">Close</string>
     <string name="places">Places to visit</string>

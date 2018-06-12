@@ -24,11 +24,8 @@
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         app:menu="@menu/navigation_menu"
-        android:layout_gravity="start">
-     <!-- <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:src="@mipmap/ic_launcher"/> -->
+        android:layout_gravity="start"
+        app:headerLayout="@layout/navigation_header">
 
     </android.support.design.widget.NavigationView>
 
