@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">New York</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="places">Places to visit</string>
+    <string name="foods">Food &amp; Drinks</string>
+    <string name="accommodations">Accommodations</string>
+    <string name="businesses">Businesses</string>
+    <string name="services">Services</string>
+</resources>
