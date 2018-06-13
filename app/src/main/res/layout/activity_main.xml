@@ -8,12 +8,16 @@
     tools:context="com.example.android.newyork.MainActivity"
     android:id="@+id/drawer_layout">
 
-    <LinearLayout
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:padding="@dimen/tiny">
-
-    </LinearLayout>
+        tools:context="com.example.android.newyork.MainActivity">
+        <ListView
+            android:id="@+id/list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
 
     <android.support.design.widget.NavigationView
         android:layout_width="wrap_content"
