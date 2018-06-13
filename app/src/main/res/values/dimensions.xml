@@ -6,6 +6,4 @@
     <dimen name="md">30dp</dimen>
     <dimen name="tiny">4dp</dimen>
     <dimen name="card_title_text">20sp</dimen>
-
-    <dimen name="rate">4.6</dimen>
 </resources>
