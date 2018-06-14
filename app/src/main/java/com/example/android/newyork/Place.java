@@ -15,8 +15,9 @@ public class Place {
     private String more;
     private String facts;
     private String owner;
+    private double price;
 
-    public Place(int picture, String title, double rating, int reviews, String description, String address, String architects, String more, String facts, String owner){
+    public Place(int picture, String title, double rating, int reviews, String description, String address, String architects, String more, String facts, String owner, double price){
         this.picture = picture;
         this.title = title;
         this.rating = rating;
@@ -27,6 +28,7 @@ public class Place {
         this.more = more;
         this.facts = facts;
         this.owner = owner;
+        this.price = price;
     }
 
     public int getPicture(){
@@ -67,5 +69,9 @@ public class Place {
 
     public String getOwner(){
         return owner;
+    }
+
+    public double getPrice(){
+        return price;
     }
 }
