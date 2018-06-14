@@ -1,12 +1,7 @@
 package com.example.android.newyork;
 
-import android.app.FragmentManager;
-import android.app.FragmentTransaction;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
-import android.support.design.widget.TabLayout;
-import android.support.v4.app.Fragment;
-import android.support.v4.view.ViewPager;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
@@ -58,6 +53,7 @@ public class MainActivity extends AppCompatActivity {
                         Toast.makeText(MainActivity.this, "Launches Places to visit fragment", Toast.LENGTH_SHORT).show();
                         replaceFragment(places);
                         setTitle("Places to visit");
+                        mDrawerLayout.closeDrawers();
                         break;
                     case R.id.eats:
                         Toast.makeText(MainActivity.this, "Launches Foods & Drinks fragment", Toast.LENGTH_SHORT).show();
@@ -66,6 +62,7 @@ public class MainActivity extends AppCompatActivity {
                         Toast.makeText(MainActivity.this, "Launches accommodations fragment", Toast.LENGTH_SHORT).show();
                         replaceFragment(accommodations);
                         setTitle("Accommodations");
+                        mDrawerLayout.closeDrawers();
                         break;
                     case R.id.businesses:
                         Toast.makeText(MainActivity.this, "Launches Businesses fragment", Toast.LENGTH_SHORT).show();
