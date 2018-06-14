@@ -31,6 +31,9 @@ public class MainActivity extends AppCompatActivity {
         places = new PlacesFragment();
         accommodations = new AccommodationsFragment();
 
+        // Displays the places to visit on start
+        replaceFragment(places);
+
 //        ViewPager viewPager = (ViewPager) findViewById(R.id.view_pager);
 //        FixedPagerAdapter adapter = new FixedPagerAdapter(getSupportFragmentManager());
 //        adapter.addFragment(places, "Places");
