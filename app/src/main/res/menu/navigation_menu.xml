@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:id="@+id/places" android:title="@string/places" android:icon="@drawable/baseline_place_white_18" />
-    <item android:id="@+id/eats" android:title="@string/foods" android:icon="@drawable/baseline_restaurant_white_18" />
     <item android:id="@+id/accommodations" android:title="@string/accommodations" android:icon="@drawable/baseline_hotel_white_18" />
+    <item android:id="@+id/eats" android:title="@string/foods" android:icon="@drawable/baseline_restaurant_white_18" />
     <item android:id="@+id/businesses" android:title="@string/businesses" android:icon="@drawable/baseline_work_white_18" />
     <item android:id="@+id/services" android:title="@string/services" android:icon="@drawable/baseline_local_taxi_white_18" />
 </menu>
