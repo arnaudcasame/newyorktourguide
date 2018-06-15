@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.newyork.DetailsActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:scaleType="centerCrop"
+            tools:src="@drawable/statue_of_liberty"
+            android:id="@+id/image_view" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/lg"
+            android:background="@drawable/gradient"
+            android:layout_alignBottom="@id/image_view"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentLeft="true">
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/card_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/rating_bar"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/tiny"
+            android:textColor="@color/white"
+            android:textSize="@dimen/card_title_text"
+            tools:text="@string/mock_liberty_txt" />
+
+        <RatingBar
+            android:id="@+id/rating_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/md"
+            android:paddingBottom="@dimen/tiny"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_alignBottom="@+id/image_view"
+            tools:rating="4.6" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/image_view"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/tiny"
+            android:id="@+id/rating_text"
+            tools:text="@string/mock_rating_txt"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/image_view"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:padding="@dimen/tiny"
+            android:id="@+id/review"
+            tools:text="@string/mock_rating_txt"
+            android:textColor="@color/white"/>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.v4.view.ViewPager
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/view_pager"/>
+    </FrameLayout>
+</LinearLayout>
