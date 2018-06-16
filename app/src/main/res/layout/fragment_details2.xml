@@ -1,9 +1,33 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context="com.example.android.newyork.Details2Fragment">
 
-    
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/map"
+        tools:context=".MapsActivity"
+        android:name="com.google.android.gms.maps.SupportMapFragment" />
 
-</FrameLayout>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floating_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/sm"
+        android:layout_marginEnd="@dimen/md"
+        android:layout_marginRight="@dimen/md"
+        android:background="@color/colorAccent"
+        android:src="@drawable/baseline_navigation_white_18"
+        app:elevation="@dimen/tiny_5"
+        app:layout_anchor="@id/map"
+        app:layout_anchorGravity="bottom|right|end"
+        app:pressedTranslationZ="@dimen/xs" />
+
+</RelativeLayout>

@@ -10,20 +10,20 @@
         <android.support.v7.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="3dp"
-            app:cardCornerRadius="5dp"
-            app:cardElevation="4dp"
-            android:padding="5dp">
+            android:layout_margin="@dimen/tiny_3"
+            app:cardCornerRadius="@dimen/tiny_5"
+            app:cardElevation="@dimen/tiny_4"
+            android:padding="@dimen/tiny_5">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:padding="5dp">
+                android:padding="@dimen/tiny_5">
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="8dp"
+                    android:layout_marginBottom="@dimen/tiny_8"
                     android:id="@+id/description"
                     android:text="@string/dyk"/>
                 <TextView
@@ -44,7 +44,15 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:id="@+id/address"
+                    android:textStyle="bold"
+                    tools:text="@string/mock_liberty_txt"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
                     android:id="@+id/price"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorAccent"
                     tools:text="@string/mock_liberty_txt"/>
             </LinearLayout>
         </android.support.v7.widget.CardView>
@@ -52,31 +60,31 @@
         <android.support.v7.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:layout_marginBottom="8dp"
-            android:layout_marginLeft="3dp"
-            android:layout_marginRight="3dp"
-            app:cardCornerRadius="5dp"
-            app:cardElevation="4dp"
-            android:padding="5dp"
+            android:layout_marginTop="@dimen/tiny_8"
+            android:layout_marginBottom="@dimen/tiny_8"
+            android:layout_marginLeft="@dimen/tiny_3"
+            android:layout_marginRight="@dimen/tiny_3"
+            app:cardCornerRadius="@dimen/tiny_5"
+            app:cardElevation="@dimen/tiny_4"
+            android:padding="@dimen/tiny_5"
             android:id="@+id/dyk_holder">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:padding="5dp">
+                android:padding="@dimen/tiny_5">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
+                android:layout_marginBottom="@dimen/tiny_8"
                 android:text="@string/dyk"
                 android:textSize="@dimen/info_title_text"/>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
+                android:layout_marginBottom="@dimen/tiny_5"
                 android:id="@+id/dyk"/>
             </LinearLayout>
         </android.support.v7.widget.CardView>

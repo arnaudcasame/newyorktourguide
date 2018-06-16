@@ -29,12 +29,6 @@ public class MainActivity extends AppCompatActivity {
         // Displays the places to visit on start
         replaceFragment(places);
 
-//        ViewPager viewPager = (ViewPager) findViewById(R.id.view_pager);
-//        FixedPagerAdapter adapter = new FixedPagerAdapter(getSupportFragmentManager());
-//        adapter.addFragment(places, "Places");
-//        adapter.addFragment(accommodations, "Accomodations");
-//        viewPager.setAdapter(adapter);
-
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
         mBarDrawerToggle = new ActionBarDrawerToggle(this, mDrawerLayout, R.string.open, R.string.close);
 

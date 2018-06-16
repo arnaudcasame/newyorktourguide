@@ -84,6 +84,13 @@ public class Details1Fragment extends Fragment {
             owner.setVisibility(View.GONE);
         }
 
+        TextView address = (TextView) getActivity().findViewById(R.id.address);
+        if(!TextUtils.equals("N/A", place.getAddress())){
+            address.setText("Address: "+place.getAddress());
+        }else{
+            address.setVisibility(View.GONE);
+        }
+
         CardView dyk_holder = (CardView) getActivity().findViewById(R.id.dyk_holder);
         TextView dyk = (TextView) getActivity().findViewById(R.id.dyk);
         if(!TextUtils.equals("N/A", place.getFacts())){

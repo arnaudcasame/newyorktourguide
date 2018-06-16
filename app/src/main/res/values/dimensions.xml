@@ -4,6 +4,12 @@
     <dimen name="big">160dp</dimen>
     <dimen name="lg">50dp</dimen>
     <dimen name="md">30dp</dimen>
-    <dimen name="tiny">4dp</dimen>
+    <dimen name="sm">21dp</dimen>
+    <dimen name="xs">12dp</dimen>
+    <dimen name="tiny_3">3dp</dimen>
+    <dimen name="tiny_4">4dp</dimen>
+    <dimen name="tiny_5">5dp</dimen>
+    <dimen name="tiny_8">8dp</dimen>
     <dimen name="card_title_text">20sp</dimen>
+    <dimen name="info_title_text">16sp</dimen>
 </resources>
